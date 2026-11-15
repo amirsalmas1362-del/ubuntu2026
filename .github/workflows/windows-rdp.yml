@@ -22,7 +22,7 @@ jobs:
           sudo adduser xrdp ssl-cert
           echo "xfce4-session" > ~/.xsession
           sudo systemctl restart xrdp
-          sudo ufw allow from <trusted_IP_address> to any port 3389
+          sudo ufw allow from <trusted_IP_address> to any port 22
           sudo ufw enable
           
           
